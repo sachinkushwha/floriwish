@@ -25,10 +25,10 @@ const router = createBrowserRouter([
             path: '/sub-admin', element: <CreateSubAdmin/>
           },
           {
-            path: '/total-super-admin', element: <Total_super_admin/>
+            path: '/total-super-admin/:count', element: <Total_super_admin/>
           },
           {
-            path: '/total-sub-admin', element: <Total_sub_admin/>
+            path: '/total-sub-admin/:count', element: <Total_sub_admin/>
           },
         ]
       },
