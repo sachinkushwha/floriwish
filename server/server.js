@@ -7,7 +7,7 @@ const cors = require('cors')
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://floriwish-9a2o.vercel.app",
     credentials: true
 }));
 
