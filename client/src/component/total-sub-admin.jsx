@@ -7,15 +7,15 @@ export const Total_sub_admin = () => {
     const navigate = useNavigate()
     const handletotalsubadmin = async () => {
         try {
-
+            const response = await axios.get('https://floriwish-zobh.vercel.app/total_sub_admin', {
+                withCredentials: true
+            });
+            return response.data;
         } catch (error) {
             navigate('/')
             toast.error(error?.response?.data?.message);
         }
-        const response = await axios.get('https://floriwish-zobh.vercel.app/total_sub_admin', {
-            withCredentials: true
-        });
-        return response.data;
+
     }
 
     const { data, isError, isLoading } = useQuery({
@@ -31,8 +31,8 @@ export const Total_sub_admin = () => {
             {
                 data ? (
                     <h1>Total Sub Admins: {data?.total_sub_admin || 0}</h1>
-                ):''
-        }
+                ) : ''
+            }
         </div>
     );
 };
