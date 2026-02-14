@@ -1,33 +1,8 @@
-import { useEffect } from "react";
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
-import toast from "react-hot-toast";
+
+import {  useParams } from "react-router-dom";
 export const Total_sub_admin = () => {
     const {count}=useParams();
-    const navigate = useNavigate()
-    // const handletotalsubadmin = async () => {
-    //     
-    //     try {
-    //         const response = await axios.get('https://floriwish-zobh.vercel.app/total_sub_admin', {
-    //             withCredentials: true
-    //         });
-    //         return response.data;
-    //     } catch (error) {
-    //         navigate('/')
-    //         toast.error(error?.response?.data?.message);
-    //     }
 
-    // }
-
-    // const { data, isError, isLoading } = useQuery({
-    //     queryFn: handletotalsubadmin,
-    //     retry: false
-    // });
-
-
-    // if (isLoading) return null
-    // if (isError) return null;
     return (
         <div>
             {
