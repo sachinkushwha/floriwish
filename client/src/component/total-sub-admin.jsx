@@ -19,7 +19,6 @@ export const Total_sub_admin = () => {
     }
 
     const { data, isError, isLoading } = useQuery({
-        queryKey: ['total_sub_admin'],
         queryFn: handletotalsubadmin,
         retry: false
     });

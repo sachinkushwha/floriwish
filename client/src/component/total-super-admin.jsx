@@ -21,6 +21,7 @@ export const Total_super_admin = () => {
         queryFn: getSuperUserCount,
         retry: false,
     });
+    
     return (
         <div>
             {
