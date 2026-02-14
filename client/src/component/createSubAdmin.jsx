@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 export const CreateSubAdmin = (req, res) => {
     const navigate = useNavigate();
     const createSubAdmin = async (formdata) => {
-        const response = await axios.post('http://localhost:3000/sub-admin', formdata, {
+        const response = await axios.post('https://floriwish-zobh.vercel.app/sub-admin', formdata, {
             withCredentials: true
         });
         return response.data;

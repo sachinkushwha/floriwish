@@ -7,7 +7,7 @@ export const Total_super_admin = () => {
     const navigate = useNavigate();
     const getSuperUserCount = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/total_super_user', {
+            const response = await axios.get('https://floriwish-zobh.vercel.app/total_super_user', {
                 withCredentials: true
             });
             return response.data;

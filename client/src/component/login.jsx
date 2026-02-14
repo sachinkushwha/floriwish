@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 export default function Login() {
     const navigate = useNavigate();
     const postLogindata = async (formdata) => {
-        const response = await axios.post('http://localhost:3000/login', formdata, {
+        const response = await axios.post('https://floriwish-zobh.vercel.app/login', formdata, {
             withCredentials: true
         });
         return response.data;

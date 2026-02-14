@@ -7,7 +7,7 @@ export const Home = () => {
     const navigate = useNavigate();
     const { data } = useAuth();
     const handleLogout = async () => {
-        const response = await axios.post('http://localhost:3000/logout', {}, {
+        const response = await axios.post('https://floriwish-zobh.vercel.app/logout', {}, {
             withCredentials: true
         });
         return response.data;

@@ -12,7 +12,7 @@ export const Total_sub_admin = () => {
             navigate('/')
             toast.error(error?.response?.data?.message);
         }
-        const response = await axios.get('http://localhost:3000/total_sub_admin', {
+        const response = await axios.get('https://floriwish-zobh.vercel.app/total_sub_admin', {
             withCredentials: true
         });
         return response.data;
